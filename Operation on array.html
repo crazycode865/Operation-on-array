@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS/JS Training</title>
+
+</head>
+
+<body>
+    <div class="input" id="inputId">
+        <h4>Enter an input Array</h4>
+        <input type="text" name="inputArray" id="arrId" value=""> <br><br>
+
+        <button onclick="Add()">Addition</button>
+        <button onclick="Multiply()">Multiply</button>
+        <p class="output" id="outputId">
+            By Awadhesh
+        </p>
+        <script>
+            function Add() {
+                let nums = document.getElementById("arrId").value.split(" ");
+                let sum = 0;
+                for (let i = 0; i < nums.length; i++) {
+                    sum += parseInt(nums[i]);
+                }
+                document.getElementById("outputId").innerHTML = document.write("Sum of Array element is ", sum);
+            }
+            function Multiply() {
+                let nums = document.getElementById("arrId").value.split(" ");
+                let mul = 1;
+                for (let i = 0; i < nums.length; i++) {
+                    mul *= parseInt(nums[i]);
+                }
+                document.getElementById("outputId").innerHTML = document.write("Multiplication of Array element is ", mul);
+            }
+        </script>
+    </div>
+
+</body>
+
+</html><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>
